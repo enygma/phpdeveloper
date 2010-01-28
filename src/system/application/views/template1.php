@@ -1,4 +1,3 @@
-
 <html>
 <head>
 	<title>PHPDeveloper.org : PHP News, Views & Community</title>
@@ -7,7 +6,7 @@
 <body>
 	<table cellpadding="0" cellspacing="0" border="0" id="layout">
 	<tr>
-		<td id="hdr_graphic"><img src="/inc/img/logo3.gif"</td>
+		<td id="hdr_graphic"><a href="/"><img src="/inc/img/logo3-sm.jpg" border="0"></a></td>
 		<td id="hdr_search" align="right">
 			<form action="/search">
 				<input type="text" size="10" name="search_term">
@@ -31,6 +30,9 @@
 			<tr>
 				<td width="85%" valign="top" id="content">
 					<?php echo $content; ?>
+				</td>
+				<td valign="top" class="center_bar">
+					<?php echo $center_bar; ?>
 				</td>
 				<td width="15%" valign="top">
 					<?php echo $sidebar1; ?>

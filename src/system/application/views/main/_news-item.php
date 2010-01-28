@@ -22,12 +22,10 @@
 				echo '<span style="font-size:10px">at '.date('H:i:s',$dt).'</span><br/>'; 
 			?>
 		</div>
-		<?php 
-		echo $from;
-		echo stripslashes($item->story); 
-		?>
+		<span class="news_item_byline"><?php echo $from; ?></span>
+		<?php echo stripslashes($item->story); ?>
 	</td></tr>
-	<tr id="news_item_tags"><td>
+	<tr class="news_item_tags"><td> tagged
 	<?php
 	foreach($item->tags as $t){
 		echo '<a href="/tag/'.$t->tag.'">'.$t->tag.'</a> ';

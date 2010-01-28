@@ -66,6 +66,7 @@ $template['default']['regions'] = array(
 	'sidebar1',
 	'sidebar2',
 	'sidebar3',
+	'center_bar',
 	'info_block'
 );
 $template['default']['parser'] = 'parser';

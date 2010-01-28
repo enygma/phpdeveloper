@@ -15,6 +15,8 @@ class News extends Controller {
 			'news_items'=>$this->news_model->getNewsDetail($nid),
 		);
 		$this->template->write_view('content','news/list',$out);
+		$this->template->write_view('center_bar','main/_ad_list',array());
+		
 		$this->template->render();
 	}
 	public function view($nid){
